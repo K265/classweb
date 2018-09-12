@@ -1,0 +1,9 @@
+img.photo-center {
+    height: calc(100vh - 90px);
+    display: block;
+    margin: auto;
+}
+
+div.photo-container{
+    margin: 20px;
+}

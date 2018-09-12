@@ -1,13 +1,52 @@
-import React, { Component } from 'react';
-import { Button } from 'antd';
-import './App.css';
-class App extends Component {
+import React from 'react';
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
+import { Menu, Icon } from 'antd';
+
+import './css/app.css';
+
+import School from './School';
+import Activities from './Activities';
+import Photos from './Photos';
+
+const SubMenu = Menu.SubMenu;
+export default class App extends React.Component {
   render() {
     return (
-      <div className="App">
-        <Button type="primary">Button</Button>
-      </div>
+      <Router>
+        <div className="home-container">
+          <Menu mode="horizontal" style={{ userSelect: 'none' }}>
+            <Menu.Item>
+              <Link to="/school">
+                <span>
+                  <Icon type="appstore" theme="filled" />学校
+                </span>
+              </Link>
+            </Menu.Item>
+            <Menu.Item>
+              <Link to="/activities">
+                <span>
+                  <Icon type="appstore" theme="filled" />班级活动
+                </span>
+              </Link>
+            </Menu.Item>
+            <Menu.Item>
+              <Link to="/photos">
+                <span>
+                  <Icon type="appstore" theme="filled" />班级合照
+                </span>
+              </Link>
+            </Menu.Item>
+          </Menu>
+
+          <Switch>
+            <Route exact path="/" component={null} />
+            <Route exact path="/school" component={School} />
+            <Route exact path="/activities" component={Activities} />
+            <Route exact path="/photos" component={Photos} />
+            <Redirect to="/" />
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }
-export default App;
