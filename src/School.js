@@ -5,7 +5,7 @@ export default class School extends React.Component {
   render() {
     return (
       <div className="photo-container">
-        <img className="photo-center" src={school} alt="school-photo" />
+        <img className="photo-center" src={school} alt="school" />
       </div>
     );
   }

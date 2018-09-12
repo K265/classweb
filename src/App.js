@@ -8,7 +8,6 @@ import School from './School';
 import Activities from './Activities';
 import Photos from './Photos';
 
-const SubMenu = Menu.SubMenu;
 export default class App extends React.Component {
   render() {
     return (
