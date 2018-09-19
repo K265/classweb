@@ -1,0 +1,11 @@
+.home-container {
+	position: relative;
+	min-width: 500px;
+}
+
+.logo {
+	position: absolute;
+	width: 36px;
+	top: 6px;
+	right: 10px;
+}

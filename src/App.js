@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
 import { Menu, Icon } from 'antd';
-
+import logo from './images/logo.svg';
 import './css/app.css';
 
 import School from './School';
@@ -14,6 +14,7 @@ export default class App extends React.Component {
     return (
       <Router>
         <div className="home-container">
+          <img className="logo" src={logo} alt="logo" />
           <Menu mode="horizontal" style={{ userSelect: 'none' }}>
             <Menu.Item>
               <Link to="/school">
