@@ -1,0 +1,15 @@
+.timeline-image-container {
+	/*position: relative;*/
+	width: 30vw;
+	max-height: 30vw;
+	overflow: hidden;
+}
+
+.timeline-image-container img {
+	width: 30vw;
+}
+
+img.moveup-fix {
+	position: relative;
+	top: -15vw;
+}
