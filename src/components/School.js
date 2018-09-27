@@ -1,6 +1,6 @@
 import React from 'react';
-import school from './images/memo02.webp';
-import './css/photo.css';
+import school from '../images/memo02.webp';
+import '../css/photo.css';
 export default class School extends React.Component {
   render() {
     return (

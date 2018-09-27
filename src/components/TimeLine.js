@@ -1,11 +1,11 @@
 import React from 'react';
 import { Timeline } from 'antd';
-import memo01 from './images/memo01.webp';
-import memo02 from './images/memo02.webp';
-import memo03 from './images/memo03.webp';
-import memo04 from './images/memo04.webp';
-import memo05 from './images/memo05.webp';
-import './css/timeline.css';
+import memo01 from '../images/memo01.webp';
+import memo02 from '../images/memo02.webp';
+import memo03 from '../images/memo03.webp';
+import memo04 from '../images/memo04.webp';
+import memo05 from '../images/memo05.webp';
+import '../css/timeline.css';
 export default class TimeLine extends React.Component {
   render() {
     return (

@@ -4,10 +4,10 @@ import { Menu, Icon } from 'antd';
 import logo from './images/logo.svg';
 import './css/app.css';
 
-import School from './School';
-import Activities from './Activities';
-import Photos from './Photos';
-import TimeLine from './TimeLine';
+import School from './components/School';
+import Activities from './components/Activities';
+import Photos from './components/Photos';
+import TimeLine from './components/TimeLine';
 
 export default class App extends React.Component {
   render() {
